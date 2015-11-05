@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
                 (ImageButton) findViewById(R.id.btnCommunicator), "com.uvigo.gti.PictoDroidLite");
         LaunchActivity chat = new LaunchActivity(getApplicationContext(),
                 (ImageButton) findViewById(R.id.btnChat), "es.uvigo.gti.PictoTalk");
+        LaunchActivity schedule = new LaunchActivity(getApplicationContext(),
+                (ImageButton) findViewById(R.id.btnSchedule), "com.lorenzomoreno.pictogramagenda");
 
        LaunchUrl moodle = new LaunchUrl(this,
                (ImageButton) findViewById(R.id.btnMoodle), "http://5duruguay.edu.uy");
