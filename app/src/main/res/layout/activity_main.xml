@@ -21,7 +21,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:adjustViewBounds="true"
+
                 android:scaleType="fitCenter"
                 android:id="@+id/btnCommunicator"
                 android:src="@mipmap/ic_communicator" />
@@ -33,7 +33,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnWriter"
-                android:src="@android:drawable/ic_menu_edit" />
+                android:src="@mipmap/ic_writer" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -42,7 +42,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnChat"
-                android:src="@android:drawable/stat_notify_chat"
+                android:src="@mipmap/ic_chat"
                 android:contentDescription="@string/communicator" />
 
             <ImageButton
@@ -52,7 +52,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnMoodle"
-                android:src="@android:drawable/ic_menu_gallery" />
+                android:src="@mipmap/ic_moodle" />
         </TableRow>
 
         <TableRow
@@ -66,17 +66,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnBrowser"
-                android:src="@android:drawable/ic_menu_search" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
                 android:id="@+id/btnSchedule"
-                android:src="@android:drawable/ic_menu_agenda" />
+                android:src="@mipmap/ic_schedule" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -85,7 +76,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnEducational"
-                android:src="@android:drawable/ic_menu_myplaces" />
+                android:src="@mipmap/ic_educational" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -94,7 +85,16 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnUtils"
-                android:src="@android:drawable/ic_menu_preferences" />
+                android:src="@mipmap/ic_utils" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnClose"
+                android:src="@mipmap/ic_close" />
         </TableRow>
 
     </TableLayout>
