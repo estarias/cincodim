@@ -14,6 +14,10 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
+    String COMMUNICATOR = "com.uvigo.gti.PictoDroidLite";
+    String CHAT = "es.uvigo.gti.PictoTalk";
+    String MOODLE_PAGE = "http://5duruguay.edu.uy";
+    String SCHEDULE = "com.lorenzomoreno.pictogramagenda";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +28,16 @@ public class MainActivity extends Activity {
 
     public void init() {
         LaunchActivity communicator = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnCommunicator), "com.uvigo.gti.PictoDroidLite");
+                (ImageButton) findViewById(R.id.btnCommunicator), COMMUNICATOR);
 
         LaunchActivity chat = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnChat), "es.uvigo.gti.PictoTalk");
+                (ImageButton) findViewById(R.id.btnChat), CHAT);
 
         LaunchUrl moodle = new LaunchUrl(this,
-                (ImageButton) findViewById(R.id.btnMoodle), "http://5duruguay.edu.uy");
+                (ImageButton) findViewById(R.id.btnMoodle), MOODLE_PAGE);
 
         LaunchActivity schedule = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnSchedule), "com.lorenzomoreno.pictogramagenda");
+                (ImageButton) findViewById(R.id.btnSchedule), SCHEDULE);
 
         ImageButton educational = (ImageButton) findViewById(R.id.btnEducational);
         ImageButton utils = (ImageButton) findViewById(R.id.btnUtils);
@@ -46,14 +50,14 @@ public class MainActivity extends Activity {
                 exitApp();
             }
         });
-
-        educational.setOnClickListener(new View.OnClickListener() {
+        utils.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showMessage("Sin implementar");
+                showUtils();
             }
         });
-        utils.setOnClickListener(new View.OnClickListener() {
+
+        educational.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showMessage("Sin implementar");
@@ -71,9 +75,13 @@ public class MainActivity extends Activity {
         Toast msgToast = Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT);
         msgToast.show();
     }
+    public void showUtils() {
+        Intent intent = new Intent(MainActivity.this, UtilsActivity.class);
+        startActivity(intent);
+        //startActivityForResult(intent, RESULT_OK);
+    }
 
-    public void exitApp()
-    {
+    public void exitApp(){
         //call this method to exit _CLEARLY_,
         //and prompt the user which launcher to use next
 

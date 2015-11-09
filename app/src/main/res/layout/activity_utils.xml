@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    tools:context=".HomeActivity" >
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.cincodim.UtilsActivity">
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -22,8 +21,8 @@
                 android:layout_weight="1"
 
                 android:scaleType="fitCenter"
-                android:id="@+id/btnCommunicator"
-                android:src="@mipmap/ic_communicator" />
+                android:id="@+id/btnCam"
+                android:src="@mipmap/ic_cam" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -31,8 +30,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnWriter"
-                android:src="@mipmap/ic_writer" />
+                android:id="@+id/btnPaint"
+                android:src="@mipmap/ic_paint" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -40,18 +39,10 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnChat"
-                android:src="@mipmap/ic_chat"
+                android:id="@+id/btnRecordSound"
+                android:src="@mipmap/ic_record_sound"
                 android:contentDescription="@string/communicator" />
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:id="@+id/btnMoodle"
-                android:src="@mipmap/ic_moodle" />
         </TableRow>
 
         <TableRow
@@ -65,8 +56,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnSchedule"
-                android:src="@mipmap/ic_schedule" />
+                android:id="@+id/btnGallery"
+                android:src="@mipmap/ic_image_gallery" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -74,17 +65,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnEducational"
-                android:src="@mipmap/ic_educational" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:id="@+id/btnUtils"
-                android:src="@mipmap/ic_utils" />
+                android:id="@+id/btnBrowser"
+                android:src="@mipmap/ic_browser" />
 
             <ImageButton
                 android:layout_width="0dp"
