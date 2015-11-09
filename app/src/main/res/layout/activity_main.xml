@@ -17,15 +17,18 @@
             android:layout_weight="1">
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-
                 android:scaleType="fitCenter"
                 android:id="@+id/btnCommunicator"
                 android:src="@mipmap/ic_communicator" />
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -35,6 +38,8 @@
                 android:src="@mipmap/ic_writer" />
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -45,6 +50,8 @@
                 android:contentDescription="@string/communicator" />
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -60,6 +67,8 @@
             android:layout_weight="1" >
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -69,6 +78,8 @@
                 android:src="@mipmap/ic_schedule" />
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -78,6 +89,8 @@
                 android:src="@mipmap/ic_educational" />
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -87,6 +100,8 @@
                 android:src="@mipmap/ic_utils" />
 
             <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
