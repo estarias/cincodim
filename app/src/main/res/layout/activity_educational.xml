@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.cincodim.UtilsActivity">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnGames"
+                android:src="@mipmap/ic_games" />
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnStories"
+                android:src="@mipmap/ic_stories" />
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnAudio"
+                android:src="@mipmap/ic_audio"
+                android:contentDescription="@string/communicator" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnReading"
+                android:src="@mipmap/ic_reading" />
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnWriting"
+                android:src="@mipmap/ic_writing" />
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnClose"
+                android:src="@mipmap/ic_close" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

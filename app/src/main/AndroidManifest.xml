@@ -17,6 +17,7 @@
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -24,7 +25,12 @@
         <activity
             android:name=".UtilsActivity"
             android:label="@string/title_activity_utils"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".EducationalActivity"
+            android:label="@string/title_activity_educational"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 
