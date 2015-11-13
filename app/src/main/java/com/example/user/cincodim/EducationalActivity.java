@@ -11,8 +11,7 @@ public class EducationalActivity extends Activity {
     String GAMES = "http://www.pictojuegos.com/";
     String STORIES = "http://www.pictocuentos.com/";
     String AUDIO = "http://www.pictosonidos.com/";
-//    String READING = "";
-//    String WRITING = "";
+    String LITERACY = "com.pfg_carlosgarcia.lecto_escritura";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,26 +31,8 @@ public class EducationalActivity extends Activity {
         LaunchUrl audio = new LaunchUrl(this,
                 (ImageButton) findViewById(R.id.btnAudio), AUDIO);
 
-        ImageButton writing = (ImageButton) findViewById(R.id.btnWriting);
-        ImageButton reading = (ImageButton) findViewById(R.id.btnReading);
-        writing.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showMessage("Sin implementar");
-            }
-        });
-        reading.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showMessage("Sin implementar");
-            }
-        });
-/*
-        LaunchUrl reading = new LaunchUrl(this,
-                (ImageButton) findViewById(R.id.btnReading), READING);
-
-        LaunchUrl writing = new LaunchUrl(this,
-                (ImageButton) findViewById(R.id.btnWriting), WRITING);*/
+        LaunchActivity literacy = new LaunchActivity(this,
+                (ImageButton) findViewById(R.id.btnLiteracy), LITERACY);
 
         ImageButton close = (ImageButton) findViewById(R.id.btnClose);
         close.setOnClickListener(new View.OnClickListener() {

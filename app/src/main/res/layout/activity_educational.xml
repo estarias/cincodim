@@ -36,18 +36,6 @@
                 android:id="@+id/btnStories"
                 android:src="@mipmap/ic_stories" />
 
-            <ImageButton
-                android:layout_margin="10dp"
-                android:background="@drawable/button_border"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:id="@+id/btnAudio"
-                android:src="@mipmap/ic_audio"
-                android:contentDescription="@string/communicator" />
-
         </TableRow>
 
         <TableRow
@@ -63,8 +51,9 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnReading"
-                android:src="@mipmap/ic_reading" />
+                android:id="@+id/btnAudio"
+                android:src="@mipmap/ic_audio"
+                android:contentDescription="@string/communicator" />
 
             <ImageButton
                 android:layout_margin="10dp"
@@ -74,8 +63,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:id="@+id/btnWriting"
-                android:src="@mipmap/ic_writing" />
+                android:id="@+id/btnLiteracy"
+                android:src="@mipmap/ic_literacy" />
 
             <ImageButton
                 android:layout_margin="10dp"
