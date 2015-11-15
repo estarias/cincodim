@@ -18,16 +18,18 @@
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnCommunicator"
-                android:src="@mipmap/ic_communicator" />
+                android:src="@drawable/ic_communicator" />
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -35,10 +37,11 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnWriter"
-                android:src="@mipmap/ic_writer" />
+                android:src="@drawable/ic_writer" />
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -46,11 +49,12 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnChat"
-                android:src="@mipmap/ic_chat"
+                android:src="@drawable/ic_chat"
                 android:contentDescription="@string/communicator" />
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -58,7 +62,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnMoodle"
-                android:src="@mipmap/ic_moodle" />
+                android:src="@drawable/ic_moodle" />
         </TableRow>
 
         <TableRow
@@ -68,6 +72,7 @@
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -75,10 +80,11 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnSchedule"
-                android:src="@mipmap/ic_schedule" />
+                android:src="@drawable/ic_schedule" />
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -86,10 +92,11 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnEducational"
-                android:src="@mipmap/ic_educational" />
+                android:src="@drawable/ic_educational" />
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -97,10 +104,11 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnUtils"
-                android:src="@mipmap/ic_utils" />
+                android:src="@drawable/ic_utils" />
 
             <ImageButton
                 android:layout_margin="10dp"
+                android:padding="5dp"
                 android:background="@drawable/button_border"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -108,7 +116,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:id="@+id/btnClose"
-                android:src="@mipmap/ic_close" />
+                android:src="@drawable/ic_close" />
         </TableRow>
 
     </TableLayout>
