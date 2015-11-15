@@ -14,12 +14,12 @@ public class LaunchActivity extends LaunchButton {
         setActivityPackage(activity_package);
     }
 
-    public String getActivityPackage() {
-        return activity_package;
-    }
-
     public void setActivityPackage(String activity_package) {
         this.activity_package = activity_package;
+    }
+
+    public String getActivityPackage() {
+        return this.activity_package;
     }
 
     @Override

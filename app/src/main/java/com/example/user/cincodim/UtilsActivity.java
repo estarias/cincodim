@@ -1,18 +1,13 @@
 package com.example.user.cincodim;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageButton;
 
 public class UtilsActivity extends Activity {
-    String CAM = "com.android.camera";
-    String GALLERY = "com.android.gallery";
-    String RECORD = "com.android.sound";
-    String PAINT = "com.pescapps.kidspaint";
-    int CURRENT_API_VERSION = android.os.Build.VERSION.SDK_INT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,26 +16,22 @@ public class UtilsActivity extends Activity {
         init();
     }
 
+
     private void init() {
-        if (CURRENT_API_VERSION <= android.os.Build.VERSION_CODES.LOLLIPOP){
-            CAM = "com.sec.android.app.camera";
-            GALLERY = "com.sec.android.gallery3d";
-            RECORD = "com.sec.android.app.voicerecorder";
-        }
         LaunchActivity cam = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnCam), CAM);
+                (ImageButton) findViewById(R.id.btnCam), "com.android.camera2");
 
         LaunchActivity paint = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnPaint), PAINT);
+                (ImageButton) findViewById(R.id.btnPaint), "com.pescapps.kidspaint");
 
         LaunchActivity record = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnRecordSound), RECORD);
+                (ImageButton) findViewById(R.id.btnRecordSound), "com.android.soundrecorder");
 
-        LaunchUrl browser = new LaunchUrl(this,
-                (ImageButton) findViewById(R.id.btnBrowser), "http://www.google.com");
+        LaunchActivity browser = new LaunchActivity(this,
+                (ImageButton) findViewById(R.id.btnBrowser), "com.android.chrome");
 
         LaunchActivity gallery = new LaunchActivity(getApplicationContext(),
-                (ImageButton) findViewById(R.id.btnGallery), GALLERY);
+                (ImageButton) findViewById(R.id.btnGallery), "com.android.gallery3d");
 
         ImageButton close = (ImageButton) findViewById(R.id.btnClose);
         close.setOnClickListener(new View.OnClickListener() {
