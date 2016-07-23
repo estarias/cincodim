@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
     String CHAT = "es.uvigo.gti.PictoTalk";
     String MOODLE_PAGE = "http://5duruguay.edu.uy";
     String SCHEDULE = "com.lorenzomoreno.pictogramagenda";
+    String PICTOESCRIBE = "uy.udelar.psico.picto";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,9 @@ public class MainActivity extends Activity {
         LaunchActivity communicator = new LaunchActivity(getApplicationContext(),
                 (ImageButton) findViewById(R.id.btnCommunicator), COMMUNICATOR);
 
+        LaunchActivity writer = new LaunchActivity(getApplicationContext(),
+                (ImageButton) findViewById(R.id.btnWriter), PICTOESCRIBE);
+
         LaunchActivity chat = new LaunchActivity(getApplicationContext(),
                 (ImageButton) findViewById(R.id.btnChat), CHAT);
 
@@ -34,9 +38,9 @@ public class MainActivity extends Activity {
         LaunchActivity schedule = new LaunchActivity(getApplicationContext(),
                 (ImageButton) findViewById(R.id.btnSchedule), SCHEDULE);
 
+
         ImageButton educational = (ImageButton) findViewById(R.id.btnEducational);
         ImageButton utils = (ImageButton) findViewById(R.id.btnUtils);
-        ImageButton writer = (ImageButton) findViewById(R.id.btnWriter);
         ImageButton close = (ImageButton) findViewById(R.id.btnClose);
 
         close.setOnClickListener(new View.OnClickListener() {
@@ -58,12 +62,7 @@ public class MainActivity extends Activity {
                 showEducational();
             }
         });
-        writer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showMessage("Sin implementar");
-            }
-        });
+
     }
 
     public void showMessage(String txt) {
